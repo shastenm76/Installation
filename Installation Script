@@ -1,0 +1,53 @@
+wifi-menu
+pacman -Sy reflector
+
+reflector -c 'Mexico' -f 12 -l 12 -n 12 --verbose --save /etc/pacman.d/mirrorlist
+
+configure disks
+
+pacstrap
+
+genfstab
+chroot
+
+nano /etc/pacman.conf
+
+hostname
+
+adduser
+
+sudo
+
+sudo pacman -S git
+
+git pull 
+cd Installation
+pacman -S - < /file/Installation/Applications/base.txt
+pacman -S - < /file/Installation/Desktop Env/kernels.txt
+
+grub-install /dev/sda
+grub-mkconfig -o /boot/grub/grub.cfg
+
+reboot
+
+root
+wifi-menu
+
+pacman -S reflector rsync
+pacman -S - < /file/Installation/Desktop Env/XFCE-PLASMA-OB.txt
+pacman -S - < /file/Installation/Applications/pacman-all.txt
+yaourt -S - < /file/Installation/Applicatinos/yaourt/txt
+
+yaourt xf86-input-synaptic
+yaourt pulseaudio
+yaourt gvfs 
+yaourt gst-plugins
+yaourt dockbarx
+yaourt pidgin
+
+modprobe -a vboxdrv
+systemctl enable sddm
+
+
+
+
