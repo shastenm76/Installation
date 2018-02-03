@@ -1,1 +1,0 @@
-xorg intel-ucode p7zip unzip zip zziplib ib32-libcanberra frei0r-plugins vcdimager ladspa libavc1394 mlt sox libfdk-aac liteide mercurial bzr subversion java-environment icedtea-web jdk7-openjdk java-rhino jdk8-openjdk tk python-opengl
