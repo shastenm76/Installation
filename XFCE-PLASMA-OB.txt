@@ -1,0 +1,1 @@
+xfce4 xfce4-goodies plasma dolphin kate konsole thunar-volman kdelibs
