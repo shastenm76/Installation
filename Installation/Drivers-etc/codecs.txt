@@ -1,1 +1,0 @@
- a52dec faac faad2 libdca libmad libmpeg2 x264 flashplugin libdvdcss libdvdread libdvdnav dvd+rw-tools dvdauthor dvgrab cdrdao libfdk-aac libquicktime 
