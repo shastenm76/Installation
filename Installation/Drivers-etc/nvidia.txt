@@ -1,1 +1,0 @@
- lib32-mesa-demos mesa-demos libva-vdpau-driver nvidia-dkms nvidia-libgl lib32-nvidia-utils nvidia-settings lib32-opencl-nvidia
