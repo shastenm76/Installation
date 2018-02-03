@@ -20,7 +20,7 @@ sudo
 
 sudo pacman -S git
 
-git pull 
+git pull https://github.com/shastenm76/Installation.git
 cd Installation
 pacman -S - < /file/Installation/Applications/base.txt
 pacman -S - < /file/Installation/Desktop Env/kernels.txt
