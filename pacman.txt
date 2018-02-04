@@ -1,1 +1,1 @@
-ardour qjackctl musescore hydrogen guitarix kdenlive gparted blender gimp rhythmbox bluefish pavucontrol pulseaudio-alsa ffmpeg vlc alsa-utils evince ranger elinks krita dmenu file-roller clementine subverion bluefish sublime-text hunspell-en hunspell-es simplescreenrecorder 
+ardour qjackctl musescore hydrogen guitarix kdenlive gparted blender gimp rhythmbox bluefish pavucontrol pulseaudio-alsa ffmpeg vlc alsa-utils evince ranger elinks krita dmenu file-roller clementine subverion bluefish sublime-text hunspell-en hunspell-es simplescreenrecorder sublime-text calf

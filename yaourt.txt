@@ -1,1 +1,1 @@
-libreoffice spotify blueman kalu pamac-aur franz mpd ncmpcpp clipgrab hexchat muse  
+libreoffice spotify blueman kalu pamac-aur franz mpd ncmpcpp clipgrab hexchat muse vivaldi vivaldi-ffmpeg-codecs pepper-flash opera opera-ffmpeg-codecs compiz exfat-utils mixxx emerald 
