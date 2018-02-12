@@ -20,10 +20,13 @@ sudo
 
 sudo pacman -S git
 
-git pull https://github.com/shastenm76/Installation.git
+cd /home/user/Desktop
+git clone https://github.com/shastenm76/Installation.git
 cd Installation
-pacman -S - < /file/Installation/Applications/base.txt
-pacman -S - < /file/Installation/Desktop Env/kernels.txt
+pacman -S - <base.txt
+pacman -S - <kernels.txt
+(etc...watch YT video for a better understanding of how to do this.)
+
 
 grub-install /dev/sda
 grub-mkconfig -o /boot/grub/grub.cfg
@@ -34,9 +37,11 @@ root
 wifi-menu
 
 pacman -S reflector rsync
-pacman -S - < /file/Installation/Desktop Env/XFCE-PLASMA-OB.txt
-pacman -S - < /file/Installation/Applications/pacman-all.txt
-yaourt -S - < /file/Installation/Applicatinos/yaourt/txt
+
+cd /home/user/Desktop/Installation
+
+pacman -S - <XFCE-PLASMA-OB.txt
+pacman -S - <pacman-all.txt
 
 yaourt xf86-input-synaptic
 yaourt pulseaudio
@@ -47,7 +52,10 @@ yaourt pidgin
 
 modprobe -a vboxdrv
 systemctl enable sddm
+systemctl start sddm
 
+
+P.S.  In the video, I installed XFCE Plasman and pacman-all before reboot, and then just simply installed virtualbox-ext-oracle afterwards.  You can do it either way.
 
 
 
