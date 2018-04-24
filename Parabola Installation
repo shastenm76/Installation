@@ -1,0 +1,51 @@
+Parabola Installation
+
+wifi-menu
+
+pacman -Sy parabola-keyring
+
+pacman-key --populate archlinux
+pacman-key --populate parabola
+pacman-key --refresh-keys
+
+##If error pops up:
+ mkdir /root/.gnupg && chmod go-rx /root/.gnupg && touch /root/.gnupg/dirmngr_ldapservers.conf
+
+date MMDDhhmm[[CC]YY][.ss]
+
+##configure partitions
+
+pacstrap /mnt
+
+##If openrc:
+pacstrap /mnt base-openrc
+
+##If errors:
+pacman -Sfy archlinux-keyring
+
+pacstrap /mnt grub
+
+##Connect to Internet
+pacstrap /mnt wpa_supplicant
+pacstrap /mnt dialog
+
+##Generate file system table and chroot
+genfstab -p /mnt >> /mnt/etc/fstab
+arch-chroot /mnt
+mkinitcpio -p linux-libre
+
+##Add User, computer, and sudo privileges
+echo arch-geek > /etc/hostname
+passwd
+useradd -m -G audio,disk,lp,optical,storage,video,wheel,games,power,scanner -s /bin/bash shasten
+passwd shasten
+EDITOR=nano visudo
+
+##install grub
+grub-install /dev/sda
+grub-mkconfig -o /boot/grub/grub.cfg
+
+##reboot system
+exit
+umount -R /mnt
+reboot
