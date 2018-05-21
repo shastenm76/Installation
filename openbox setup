@@ -1,0 +1,1 @@
+cp -R /etc/xdg/openbox ~/.config/
