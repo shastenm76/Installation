@@ -1,0 +1,12 @@
+cp -R /etc/xdg/compiz /home/username/.config
+chown -R shasten:wheel /home/shasten/.config/compiz
+
+touch ~/.xprofile
+/usr/share/xsessions/compiz.desktop
+
+[Desktop Entry]
+Type=Application
+Name=Compiz
+Comment=Start Compiz Window Manager
+Exec=compiz
+
